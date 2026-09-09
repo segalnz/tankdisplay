@@ -1,0 +1,18 @@
+# Python environment rooted in this folder
+/bin/
+/lib/
+/lib64
+/include/
+/pyvenv.cfg
+
+# Private configuration
+/credentials
+.env
+
+# Generated files and editor settings
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.agents/
+.codex/

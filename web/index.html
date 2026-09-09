@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Water levels</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main>
+<header><div><p class="eyebrow">WATER MONITOR</p><h1>Tank levels</h1></div><span id="connection" role="status">Connecting…</span></header>
+<section class="grid" aria-label="Current water readings">
+<article class="house" id="house"><h2>House tank</h2><div class="tank"><div id="water"></div><div class="reading"><strong data-value="depth">—</strong> cm</div></div><p id="percent">Waiting for level</p><p class="age">Waiting for sensor</p></article>
+<article id="hill"><h2>Hill tank</h2><p class="metric"><strong data-value="depth">—</strong> <span>cm</span></p><p class="battery">Battery <b data-value="battery">—</b> V</p><p id="switch" class="badge">Switch unknown</p><p class="age">Waiting for sensor</p></article>
+<article id="header"><h2>Header tank</h2><p class="metric"><strong data-value="depth">—</strong> <span>cm</span></p><p class="battery">Battery <b data-value="battery">—</b> V</p><p class="age">Waiting for sensor</p></article>
+<article id="spring"><h2>Spring</h2><p class="metric"><strong data-value="distance">—</strong> <span>cm</span></p><p class="battery">Battery <b data-value="battery">—</b> V</p><p class="age">Waiting for sensor</p></article>
+<article id="flow"><h2>Roof flow</h2><p class="metric"><strong data-value="value">—</strong> <span>L/hr</span></p><p class="age">Waiting for sensor</p></article>
+<article id="valve"><h2>Valve</h2><p id="valve-state" class="metric">Unknown</p><p class="age">Waiting for sensor</p></article>
+</section>
+<article id="rain" class="rain"><div class="chart-heading"><div><h2>Roof water · last hour</h2><p>Litres per two-minute interval</p></div><p class="age">Waiting for sensor</p></div><svg id="chart" viewBox="0 0 960 230" role="img" aria-label="Rainfall chart waiting for data"></svg></article>
+<footer>Readings refresh automatically every second. <span id="errors"></span></footer>
+</main></body></html>
